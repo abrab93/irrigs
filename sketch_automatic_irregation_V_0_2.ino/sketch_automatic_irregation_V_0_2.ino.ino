@@ -1,4 +1,4 @@
-#define MOISTER_DEFAULT_LEVEL 850 //970
+#define MOISTER_DEFAULT_LEVEL 900 //970
 #define RELAY_PIN A2
 #define GREEN_PIN 10
 #define BLUE_PIN 11
@@ -78,9 +78,9 @@ void checkMoisture () {
 //Watering
 void watering(){
   digitalWrite(RELAY_PIN, LOW);
-  delay(8000);
+  delay(4000);
   digitalWrite(RELAY_PIN, HIGH);
-  delay(2000);
+  delay(8000);
   completeWatering();
   counter++; 
 }
